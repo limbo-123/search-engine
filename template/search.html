@@ -1,0 +1,40 @@
+{% load static %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet" />
+    <link href="{% static 'css/search.css' %}" rel="stylesheet" />
+  </head>
+  <div class="s010">
+      <form >
+     <h2>Ｌｉｎｕｘ ＣＬＩ</h2>
+      <br>
+        <div class="inner-form">
+          <div class="basic-search">
+            <div class="input-field">
+              <input id="search" type="text" value="{{request.GET.url}}" name="url"/>
+              <div class="icon-wrap">  
+              </div>
+            </div>
+          </div>
+          </br>
+          Total Results for <b>{{request.GET.url}}</b> matches {{result_count}} in 0.000001 Seconds
+          </br>
+          <br>
+        <div id="result" class="align">
+{% for search in result %}
+   <a href="{{search.url}}">{{search.title}}</a> <br>
+  <small> {{ search.url }}</small> </br>
+   {{search.meta}}
+   <h6>Submitted On: - {{search.date}} By:- Aanand(Linux CLI)</h6>
+{% endfor %}
+</div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+ 

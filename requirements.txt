@@ -1,0 +1,6 @@
+selenium
+django==2.1.*
+pylint
+psycopg2-binary
+virtualenv
+elastic-apm

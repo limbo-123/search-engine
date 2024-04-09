@@ -2,6 +2,7 @@ FROM ubuntu:latest
 RUN apt update -y
 RUN mkdir /WORK
 COPY . /WORK/
+RUN ls -lthra
 RUN chromedriver
 COPY chromedriver /usr/bin/
 RUN apt-get install wget python3 python3-pip -y

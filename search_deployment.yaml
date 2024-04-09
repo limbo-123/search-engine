@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: devops190/search:latest
+        image: optimusprime123/search:latest
         ports:
         - containerPort: 8080

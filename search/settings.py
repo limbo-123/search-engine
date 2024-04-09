@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'search.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'PASSWORD': 'django',
-        'USER': 'django',
-        'HOST': '172.17.0.3',
+        'NAME': 'postgres',
+        'PASSWORD': 'Password@123',
+        'USER': 'shivam',
+        'HOST': 'aks-deployment.postgres.database.azure.com',
         'PORT': '5432',
     }
 }

@@ -14,7 +14,7 @@ pipeline{
         stage('Tagging Image')
         {
             steps {
-                sh 'docker tag jenkins:search devops190/jenkins:search'
+                sh 'docker tag jenkins:search devops190/jenkins_moka:search'
             }
         }
         stage('Pushing To DockerHub')

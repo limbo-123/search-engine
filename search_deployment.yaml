@@ -15,4 +15,4 @@ spec:
       - name: my-app
         image: optimusprime123/search:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 9943

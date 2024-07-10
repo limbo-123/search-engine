@@ -12,7 +12,7 @@ spec:
         app: search-engine-alpha
     spec:
       containers:
-      - name: my-app
+      - name: my-apps
         image: optimusprime123/search:latest
         ports:
         - containerPort: 9943
